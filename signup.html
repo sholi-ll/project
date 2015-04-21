@@ -2,12 +2,17 @@
 <html>
 <head>
   <title>My Project</title>
+  <link rel="stylesheet" type="text/css" href="./public/stylesheets/style.css">
 </head>
 <body>
-<form action="./signup.html" method="POST">
-  <label>First name:<input type="text"></label><br>
-  <label>Last name:<input type="text"></label><br>
-  <label>Email:<input type="email"></label><br>
-  <label>Password:<input type="password"></label>
+<section>
+<form action="./signup" method="POST">
+  <label>First name:<input type="text" name="firstname"></label><br>
+  <label>Last name:<input type="text" name="lastname"></label><br>
+  <label>Email:<input type="email" name="email"></label><br>
+  <label>Password:<input type="password" name="soundsdangerous"></label><br>
+  <div class="submit"><input type="submit"></div>
+  </form>
+  </section>
 </body>
 </html>
