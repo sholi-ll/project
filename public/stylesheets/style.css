@@ -17,3 +17,13 @@ label {
 div.submit {
   text-align: left;
 }
+
+/*.submit {
+  transition: opacity 2s;
+  }*/
+
+button:hover {
+  background-color: lightblue;
+  border: 0.5px solid;
+  border-radius: 5px;
+  }
