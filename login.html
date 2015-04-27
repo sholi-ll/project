@@ -3,62 +3,89 @@
 <head>
   <title>My Project</title>
   <!--<link rel="stylesheet" type="text/css" href="./public/stylesheets/style.css">!-->
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
-<style>
-body {
-  background-color: #f2fcff
-}
-</style>
+  <style>
+    body {
+      background-color: #f2fcff;
+      display: block
+    }
+    form {
+      width: 400px;
+      display: block;
+      padding: 40px;
+      background: white;
+      border-radius: 3px;
+        margin-top: 0px;
+  margin-right: auto;
+  margin-bottom: 0px;
+  margin-left: auto;
+    }
+    legend {
+      text-align: center
+    }
+    input {
+        margin-top: 20px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  padding: 15px;
+  display: block;
+    }
+  </style>
 </head>
 <body>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="form-group">
-        <h2>Login</h2>
+  <div class="page-header"><h1>Some text here</h1></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
           <form action="./login" method="POST">
+            <fieldset><legend>Login</legend>
             <div class="col-md-12">
-            <label>Email:<input type="Email" class="form-control" name="email" tabindex="1"></label>
+            <input type="Email" placeholder="Email" class="form-control" name="email" tabindex="1">
             </div>
             <div class="col-md-12">
-            <label>Password:<input type="password" class="form-control" name="soundsdangerous" tabindex="2"></label>
+            <input type="password" placeholder="Password" class="form-control" name="soundsdangerous" tabindex="2">
             </div>
-  <!--<div class="submit"><input type="submit"></div><!-->
-            <div class="col-md-12"><button type="submit" class="btn btn-default" tabindex="3">Submit</button></div>
+            <!--<div class="submit"><input type="submit"></div><!-->
+            <div class="col-md-12"><button type="submit" class="btn btn-default" tabindex="3" >Submit</button></div>
+            </fieldset>
           </form>
+        </div>
       </div>
-    </div>
-    <div class="col-md-12">
-      <div class="form-group">
-        <h2>Signup</h2>
+      <div class="col-md-12">
+        <div class="form-group">
           <form action="./signup" method="POST">
+          <fieldset>
+          <legend>Signup</legend>
             <div class="col-md-12">
-            <label>First name:<input type="text" class="form-control" name="firstname" tabindex="4"></label>
+              <input type="text" placeholder="First Name" class="form-control" name="firstname" tabindex="4"></label>
             </div>
             <div class="col-md-12">
-            <label>Last name:<input type="text" class="form-control" name="lastname" tabindex="5"></label>
+              <input type="text" placeholder="Last Name" class="form-control" name="lastname" tabindex="5">
             </div>
             <div class="col-md-12">
-            <label>Email:<input type="email" name="email" class="form-control" tabindex="6"></label>
+              <input type="email" placeholder="Email" name="email" class="form-control" tabindex="6">
             </div>
             <div class="col-md-12">
-            <label>Password:<input type="password" class="form-control" name="soundsdangerous" tabindex="7"></label>
+              <input type="password" placeholder="Password" class="form-control" name="soundsdangerous" tabindex="7">
             </div>
             <div class="col-md-12">
-            <button type="submit" class="btn btn-default" tabindex="8">Submit</button>
+              <button type="submit" class="btn btn-default" tabindex="8">Submit</button>
             </div>
+            </fieldset>
           </form>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </body>
 </html>
